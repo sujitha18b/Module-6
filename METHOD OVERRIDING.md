@@ -1,12 +1,11 @@
-# Exp.No:26  
+# Exp.No:6D
 ## Method Overriding
 
----
 
 ### AIM  
 To write a Python program to create a Parent class `Bird` and inherit two child classes `Sparrow` and `Ostrich` from the `Bird` class with the same method `flight()`. Create an object for each class and call the methods of the class which will print the name of the bird that is flying.
 
----
+
 
 ### ALGORITHM
 
@@ -29,15 +28,40 @@ To write a Python program to create a Parent class `Bird` and inherit two child 
 9. **Call the `flight()` method** on each object (`obj_bird`, `obj_spr`, `obj_ost`) to display the respective messages.
 10. **Terminate the program.**
 
----
+
 
 ### PROGRAM
 
-```
+class Bird: <br />
+    def intro(self): <br />
+        print("There are many types of birds.") <br />
+	
+   def flight(self): <br />
+        print("Most of the birds can fly but some cannot.") <br />
 
-```
+class sparrow(Bird): <br />
+    def intro(self): <br />
+        print("Sparrows can fly.")  <br />
+	
+class ostrich(Bird): <br />
+    def flight(self): <br />
+        print("Ostriches cannot fly.")<br />
+	
+obj_bird = Bird() <br />
+obj_bird.intro() <br />
+obj_bird.flight() <br />
+obj_bird.intro() <br />
+obj_spr=sparrow() <br />
+obj_spr.intro() <br />
+obj_bird.intro() <br />
+obj_ost=ostrich() <br />
+obj_ost.flight()
+
 
 ### OUTPUT
 
+![image](https://github.com/user-attachments/assets/a47b3ce0-2b99-438f-b0a7-75e5c33ea979)
+
 
 ### RESULT
+Thus the python program to create a Parent class Bird and inherit two child classes has been implemented successfully.
