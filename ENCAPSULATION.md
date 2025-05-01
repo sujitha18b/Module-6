@@ -41,7 +41,6 @@ class Student: <br />
 stud = Student('Jessa', 14) <br />
 print('Name:', stud.name, stud.get_age()) <br />
 
-# change age using setter <br />
 stud.set_age(16) <br />
 
 
